@@ -3,11 +3,11 @@ import './Header.css';
 import MenuIcon from '@material-ui/icons/Menu';
 import {IconButton , Avatar} from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import AppsIcon from '@material-ui/icons/Apps';
-import SettingsIcon from '@material-ui/icons/Settings';
+import SettingsOutlinedIcon from '@material-ui/icons/SettingsOutlined';
 import HelpOutlineRoundedIcon from '@material-ui/icons/HelpOutlineRounded';
-import AccountCircleRoundedIcon from '@material-ui/icons/AccountCircleRounded';
+import TuneIcon from '@material-ui/icons/Tune';
+
 const Header = () => {
   return (
     <div className='header'>
@@ -21,7 +21,7 @@ const Header = () => {
       <div className='header__middle'>
         <SearchIcon />
         <input placeholder='Search Mail' type='text' />
-        <ArrowDropDownIcon className="header__inputCaret" />
+        <TuneIcon className="header__inputCaret" />
       </div>
       <div className='header__right'>
         <IconButton>
@@ -29,7 +29,7 @@ const Header = () => {
         </IconButton>
 
         <IconButton>
-          <SettingsIcon />
+          <SettingsOutlinedIcon />
         </IconButton>
 
         <IconButton>

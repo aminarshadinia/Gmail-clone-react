@@ -28,7 +28,13 @@
 }
 
 .header__middle .MuiSvgIcon-root {
-  color: grey;
+  color: #5F6368;
+}
+.header__right .MuiSvgIcon-root {
+  color: #5F6368;
+}
+.header__left .MuiSvgIcon-root {
+  color: #5F6368;
 }
 
 .header__middle > input {
