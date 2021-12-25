@@ -2,12 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid whitesmoke;
+  border-bottom: 1px solid #F1F3F4;
 }
 
 .header__left {
   display: flex;
   align-items: center;
+  margin-left: 15px;
 }
 
 .header__left > img {
@@ -20,9 +21,10 @@
   display: flex;
   flex: 0.7;
   align-items: center;
-  background-color: whitesmoke;
-  padding: 10px;
+  background-color: #F1F3F4;
+  padding: 5px;
   border-radius: 5px;
+  margin: 10px;
 }
 
 .header__middle .MuiSvgIcon-root {
