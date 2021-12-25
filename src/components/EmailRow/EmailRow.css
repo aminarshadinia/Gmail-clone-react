@@ -1,0 +1,40 @@
+.emailRow {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-bottom: 1px solid #F1F3F4;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.emailRow:hover {
+  border-top: 1px solid #F1F3F4;
+  box-shadow: 0px 4px 4px -2px rgba(0,0,0,0.24);
+  border: 1px solid rgb(233, 232, 232);
+}
+
+.emailRow__options {
+  display: flex;
+}
+.emailRow__options > .MuiIconButton-root {
+  color: #cccccc;
+}
+.emailRow__options > .MuiIconButton-root:hover {
+  color: #5F6368;
+}
+
+.emailRow__message {
+  display: flex;
+  flex: 0.8;
+  align-items: center;
+  font-size: 13px;
+}
+
+.emailRow__message > h4 {
+  width: 400px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
