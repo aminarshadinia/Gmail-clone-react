@@ -5,9 +5,15 @@ import EmailList from './components/EmailList/EmailList';
 import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import SendMail from './components/SendMail/SendMail';
+import { useSelector } from 'react-redux';
+import { selectSendMsgIsOpen } from './features/mailSlice';
 
 
 function App() {
+  const sendMsgisOpen = useSelector(selectSendMsgIsOpen);
+
+
   return (
       <Router>
     <div className="app">
@@ -25,6 +31,7 @@ function App() {
           </Route>
         </Switch>
         </div>
+        {sendMsgisOpen && <SendMail />}
     </div>
       </Router>
   );
