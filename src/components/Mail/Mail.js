@@ -1,5 +1,7 @@
 import React from 'react'
 import './Mail.css'
+
+import { useHistory } from 'react-router-dom';
 import { IconButton } from '@material-ui/core'
 import MoveToInboxIcon from '@material-ui/icons/MoveToInbox';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
@@ -12,11 +14,13 @@ import LabelImportantIcon from '@material-ui/icons/LabelImportant';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 const Mail = () => {
+  const history = useHistory();
+
   return (
     <div className='mail'>
       <div className='mail__tools'>
         <div className='mail__toolsLeft'>
-          <IconButton><ArrowBackIcon /></IconButton>
+          <IconButton onClick={() => history.push('/')} ><ArrowBackIcon /></IconButton>
           <IconButton><MoveToInboxIcon /></IconButton>
           <IconButton><ErrorIcon /></IconButton>
           <IconButton><DeleteIcon /></IconButton>
