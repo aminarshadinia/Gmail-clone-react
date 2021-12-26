@@ -11,11 +11,15 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import PhoneIcon from '@material-ui/icons/Phone';
 import DuoIcon from '@material-ui/icons/Duo';
 import PersonIcon from '@material-ui/icons/Person';
+import { useDispatch } from 'react-redux';
+import { openSendMsg } from '../../features/mailSlice';
 
 const Sidebar = () => {
+  const dispatch = useDispatch();
+
   return (
     <div className='sidebar'>
-      <Button className='sidebar__compose' >
+      <Button className='sidebar__compose' onClick={() => dispatch(openSendMsg())} >
         <img className='sidebar__image' src='https://www.gstatic.com/images/icons/material/colored_icons/1x/create_32dp.png' />
         Compose
       </Button>
