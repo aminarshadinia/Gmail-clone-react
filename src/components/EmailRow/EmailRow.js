@@ -17,14 +17,15 @@ const EmailRow = ({title , subject , description , time , id}) => {
         {title}
       </h3>
       <div className='emailRow__message'>
-        <h4>{subject}</h4>
-        <span className='emailRow__description'>
+        <h4>{subject} {" "}
+        <span className='emailRow__description'> - 
           {description}
         </span>
+        </h4>
       </div>
-      <div className='emailRow__description'>
+      <p className='emailRow__time'>
         {time}
-      </div>
+      </p>
     </div>
   )
 }

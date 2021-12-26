@@ -38,3 +38,20 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+.emailRow__title {
+  font-size: 13px;
+  flex: 0.3;
+  font-weight: bold;
+}
+
+.emailRow__time {
+  padding-right: 15px;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.emailRow__description {
+  font-weight: 400;
+  color: gray;
+}
